@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Shop</title>
+    <style>
+        /* Basic styling for the shop page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .product p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .product .price {
+            color: #28a745;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product .buy-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .product .buy-btn:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>DesigNest Shop</h1>
+        <p>Your one-stop shop for amazing products!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content: Product Listing -->
+    <div class="main-content" id="shop">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>This is a description of product 1. It's a great product!</p>
+            <div class="price">$29.99</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>This is a description of product 2. You will love it!</p>
+            <div class="price">$49.99</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>This is a description of product 3. A must-have item!</p>
+            <div class="price">$19.99</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>This is a description of product 4. Very popular!</p>
+            <div class="price">$39.99</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Online Shop. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
